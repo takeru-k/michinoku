@@ -1,0 +1,40 @@
+.c-flex{
+  @include mq('md'){
+    display: flex;
+    max-width: 1000px;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+}
+
+.c-flex__item{
+  padding-bottom: 24px;
+  margin-bottom: 20px;
+
+  @include mq('md'){
+    width: calc(90% / 2);
+  }
+}
+
+.c-flex__title{
+  font-size: 20px;
+  line-height: 1.2;
+  padding-left: 8px;
+  margin-bottom: 8px;
+}
+
+.-sato{
+  border-left: 4px solid #337ab7;
+}
+.-recruit{
+  border-left: 4px solid #dd00ff;
+}
+
+.c-flex__text{
+  padding-top: 12px;
+}
+
+.c-flex__link{
+  padding-top: 12px;
+  text-align: center;
+}

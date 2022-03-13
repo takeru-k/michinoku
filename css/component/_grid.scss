@@ -1,0 +1,45 @@
+.c-grid__contents{
+  display: contents;
+
+  @include mq('md'){
+    display: initial;
+    width: calc(95% / 2);
+    margin: auto 0;
+    z-index: 10;
+    padding: 3rem 0;
+  }
+
+  @include mq('lg'){
+    padding: 5rem 0;
+  }
+}
+
+.c-grid{
+  display: flex;
+  justify-content: space-between;
+}
+
+@media not all and (min-width: 768px){
+  .c-grid{
+    flex-direction: column;/* SPではcolumn表示 */
+  }
+}
+
+.c-grid__img, .p-section-title, .c-section-txt, .c-links, .p-page-section__title{
+  order: -1;
+
+  @include mq('md'){
+    order: initial;
+  }
+}
+
+.c-grid__img{
+  margin: 16px 0;
+  z-index: 10;
+
+  @include mq('md'){
+    width: calc(95% / 2);
+    margin: auto 0;
+  }
+}
+

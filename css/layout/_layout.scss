@@ -1,0 +1,90 @@
+$breakpoints: (
+  'sm': (min-width: 640px),
+  'md': (min-width: 768px),
+  'lg': (min-width: 1024px),
+  'xl': (min-width: 1280px)
+) !default;
+
+@mixin mq($breakpoint: sm) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin mq($breakpoint: lg) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin mq($breakpoint: xl) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+.l-inner{
+  max-width: 1200px;
+  padding-right: 6%;
+  padding-left: 6%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.-center{
+  text-align: center;
+}
+
+
+.c-block + .c-block{
+  padding-top: 0;
+}
+
+
+.-layer + .-layer{
+  padding-top: 0;
+}
+
+.l-page-header + .c-block{
+  margin-top: 0;
+}
+
+.-reverse{
+  @include mq('md'){
+    flex-direction: row-reverse;
+  }
+}
+
+.-bg-box{
+  overflow: hidden;
+
+  @include mq('md'){  /*タブレット以上で白背景を表示 */
+    &:before{
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 0;
+      top: 50%;
+      width: 100vw;
+      height: 100%;
+      background-color: #fff;
+      transform: translate(20%, -50%);
+      left: 0;
+    }
+  }
+}
+
+
+ /* 上下中央配置 */
+.-middle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 

@@ -1,0 +1,40 @@
+.c-broken{
+  position: relative;
+
+  @include mq('md'){
+    display: flex;
+    display: -webkit-box;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding-top: 48px;
+  }
+}
+
+.c-broken__img{
+  margin: 0 calc(50% - 50vw);
+  width: 100vw;
+
+  @include mq('md'){
+    overflow: hidden;
+    width: 60%;
+    margin: 0;
+    position: absolute;
+    right: 0;
+
+    img{
+      height: 400px;
+    }
+  }
+}
+
+.c-broken__contents{
+  position: relative;
+  margin: -100px auto 0;
+  padding: 32px;
+  z-index: 2;
+
+  @include mq('md'){
+    flex-basis: 50%; /* 要素の幅指定 */
+    margin: 0;
+  }
+}

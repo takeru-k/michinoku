@@ -1,0 +1,40 @@
+.c-box{
+  max-width: 1000px;
+
+   /* 768px以上は横並び */
+  @include mq('md'){
+    display: flex;
+    width: 90%;
+    margin: -100px auto 0;
+    z-index: 2;
+    position: relative;
+  }
+}
+
+.c-box__item{
+  padding: 40px 0;
+
+  @include mq('md'){
+    width: 50%;
+    padding: 40px 24px;
+  }
+}
+
+.c-box__icon{
+
+  /* SPでは非表示 */
+  display: none;
+
+  @include mq('md'){
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  
+}
+
+.c-box__link{
+  text-align: center;
+  margin-top: 24px;
+}

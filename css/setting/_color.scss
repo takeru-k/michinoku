@@ -1,0 +1,41 @@
+$color-main: #ffdb00;
+$color-accent: #fff100;
+$color-link: #337ab7;
+$color-button: #333;
+$color-layer: #fffef5;
+
+.-layer{
+  background: $color-layer;
+}
+
+.-layer-main{
+  background: $color-main;
+}
+
+/* SPでは背景をグラデーション */
+@media not all and (min-width: 768px){
+  .-layer-gradient{
+    background: linear-gradient(
+    to bottom,
+    #fff 70%,
+    $color-main 30%
+    );
+  }
+}
+
+.-layer-gradient{
+  @include mq('md'){
+    background: $color-main;/* タブレット以上では背景を塗りつぶし */
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.-blue{
+  background: $color-link !important;
+}
+
+.-opornent{
+  background: #dd00ff !important;
+}
+

@@ -1,0 +1,22 @@
+.p-heading-large{
+  background: $color-main;
+  margin: 1.5rem calc(50% - 50vw) 0;
+  width: 100vw;
+  text-align: center;
+  line-height: 1.2;
+  padding: 24px 0;
+
+  @include mq('md'){
+    padding: 60px 0 140px;
+    margin: 0;
+  }
+}
+
+.p-heading-large__sub{
+  display: block;
+  font-size: 2rem;
+}
+
+.p-heading-large__title{
+  font-size: 1rem;
+}

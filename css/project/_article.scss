@@ -1,0 +1,33 @@
+.p-article{
+  margin-bottom: 24px;
+}
+.p-article__title{
+  background: $color-accent;
+  font-size: 20px;
+  padding: 0.5rem 1rem 0.5rem 0.4rem;
+}
+
+.p-article__info{
+  padding: 10px 5px;
+}
+
+.p-article__subtitle{
+  font-size: 18px;
+  padding-top: 12px;
+}
+
+.p-article__text{
+  margin-bottom: 8px;
+}
+
+.tel-box{
+  background: $color-layer;
+  display: inline-block;
+  font-size: 18px;
+  padding: 8px 12px;
+  margin-top: 24px;
+}
+
+.tel-box__hour{
+  font-size: 0.9rem;
+}

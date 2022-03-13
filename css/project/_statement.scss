@@ -1,0 +1,32 @@
+.statement__text{
+  margin-top: 12px;
+}
+
+.statement__text-strong{
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.statement__sign{
+  text-align: right;
+  margin-top: 12px;
+}
+
+@include mq('md'){
+  .statement{
+    background: $color-layer;
+    padding: 24px 36px;
+    width: 88%;
+    margin: 24px auto 0;
+  }
+}
+
+.award__item{
+  margin-top: 16px;
+  padding-bottom: 24px;
+}
+
+.award__title{
+  margin-bottom: 8px;
+}
