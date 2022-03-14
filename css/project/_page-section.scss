@@ -25,5 +25,11 @@
     float: right;
     width: 45%;
     padding-left: 24px;
+    max-height: 300px;
+
+    img{
+      max-height: 300px;
+      margin: 0 auto;
+    }
   }
 }
