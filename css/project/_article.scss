@@ -21,11 +21,16 @@
 }
 
 .tel-box{
-  background: $color-layer;
+  background: $color-link;
   display: inline-block;
   font-size: 18px;
   padding: 8px 12px;
   margin-top: 24px;
+  color: #fff;
+
+  a{
+    text-decoration: none;
+  }
 }
 
 .tel-box__hour{

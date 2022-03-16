@@ -1015,11 +1015,16 @@ input[type="checkbox"]:checked + span:after {
 }
 
 .tel-box {
-  background: #fffef5;
+  background: #337ab7;
   display: inline-block;
   font-size: 18px;
   padding: 8px 12px;
   margin-top: 24px;
+  color: #fff;
+}
+
+.tel-box a {
+  text-decoration: none;
 }
 
 .tel-box__hour {
