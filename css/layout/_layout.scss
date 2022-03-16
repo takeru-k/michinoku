@@ -87,4 +87,81 @@ $breakpoints: (
   justify-content: center;
   align-items: center;
 }
- 
+
+.article-ttl{
+  font-size: 20px;
+}
+
+.article-date{
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+.thumbnail-area{
+  padding: 8px 0;
+}
+
+.article-body{
+  margin: 16px 0;
+
+  h2{
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  p{
+    line-height: 2;
+    margin-top: 16px;
+  }
+
+  li{
+    list-style: inside;
+    margin-left: 1.4em;
+	  text-indent: -1.4em;
+    margin-top: 8px;
+  }
+
+  img{
+    display: block;
+    margin-top: 16px;
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.privacy{
+  margin: 24px 0;
+  text-align: justify;
+  font-feature-settings: "palt";
+}
+
+.privacy-ttl{
+  font-size: 20px;
+
+  &:not(:first-child){
+    margin-top: 24px;
+  }
+}
+
+@include mq('md'){
+  .article-body{
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .privacy-ttl{
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@include mq('lg'){
+  .post-contents{
+    margin: 48px 0;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+
