@@ -38,3 +38,51 @@
   padding-top: 12px;
   text-align: center;
 }
+
+
+.sdgs__target{
+
+
+.c-flex{
+  padding-top: 16px;
+  @include mq('md'){
+    display: flex;
+    max-width: 1000px;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+}
+
+.c-flex__item{
+  padding-bottom: 24px;
+  margin-bottom: 20px;
+
+  @include mq('md'){
+    width: calc(90% / 2);
+  }
+}
+
+.c-flex__title{
+  font-size: 18px;
+  line-height: 1.2;
+  padding-left: 8px;
+  margin-bottom: 8px;
+}
+
+.-target12{
+  border-left: 4px solid #D39206;
+}
+
+.-target13{
+  border-left: 4px solid #407935;
+}
+
+.c-flex__text{
+  padding-top: 12px;
+}
+
+
+
+
+
+}
